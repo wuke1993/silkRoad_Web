@@ -5,7 +5,8 @@ $(document).ready(function () {
     var data = [];
 
     $.ajax({
-        url: "http://101.201.116.244:8080/silkRoad2/user_info",
+        url: "http://123.206.87.123:8080/silkRoad2/user_info",
+    	//url: "http://202.117.15.155:8080/silkRoad2/user_info",
         async: false,
         success: function (jsonData) {
             for (var i = 0; i < jsonData.length; i++) {
@@ -103,7 +104,8 @@ $(document).ready(function () {
     );
     // HotNewsList create by cc email: chen10_09@qq.com;
     $.ajax({
-        url: "http://101.201.116.244:8080/silkRoad2/news_info",
+        //url: "http://202.117.15.155:8080/silkRoad2/news_info",
+    	url: "http://123.206.87.123:8080/silkRoad2/news_info",
         async: false,
         success: function (jsonData) {
             for (var i = 0; i < jsonData.length; i++) {
@@ -131,7 +133,8 @@ $(document).ready(function () {
 
     // HotEbookList create by cc email: chen10_09@qq.com;
     $.ajax({
-        url: "http://101.201.116.244:8080/silkRoad2/ebook_info",
+        //url: "http://202.117.15.155:8080/silkRoad2/ebook_info",
+        url: "http://123.206.87.123:8080/silkRoad2/ebook_info",
         async: false,
         success: function (jsonData) {
             for (var i = 0; i < jsonData.length; i++) {
@@ -167,7 +170,8 @@ $(document).ready(function () {
 
     // HotPatentList create by cc email: chen10_09@qq.com;
     $.ajax({
-        url: "http://101.201.116.244/silkRoad2/patent_info",
+        //url: "http://202.117.15.155/silkRoad2/patent_info",
+        url: "http://123.206.87.123/silkRoad2/patent_info",
         async: false,
         success: function (jsonData) {
             for (var i = 0; i < jsonData.length; i++) {
@@ -199,7 +203,8 @@ $(document).ready(function () {
 
     // HotPaperList create by cc email: chen10_09@qq.com;
     $.ajax({
-        url: "http://101.201.116.244:8080/silkRoad2/paper_info",
+        //url: "http://202.117.15.155:8080/silkRoad2/paper_info",
+    	url: "http://123.206.87.123:8080/silkRoad2/paper_info",
         async: false,
         success: function (jsonData) {
             for (var i = 0; i < jsonData.length; i++) {
@@ -227,7 +232,8 @@ $(document).ready(function () {
 
     // HotConferenceList create by cc email: chen10_09@qq.com;
     $.ajax({
-        url: "http://101.201.116.244:8080/silkRoad2/conf_info",
+        //url: "http://202.117.15.155:8080/silkRoad2/conf_info",
+        url: "http://123.206.87.123:8080/silkRoad2/conf_info",
         async: false,
         success: function (jsonData) {
             for (var i = 0; i < jsonData.length; i++) {
