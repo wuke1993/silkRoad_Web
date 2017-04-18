@@ -7,7 +7,6 @@ import java.sql.ResultSet;
 import org.bson.Document;
 
 import com.cc.bean.Conference;
-import com.cc.bean.Paper;
 import com.cc.utility.MongoConn;
 import com.cc.utility.MysqlConn;
 import com.google.gson.Gson;
@@ -16,8 +15,7 @@ import com.mongodb.client.MongoCollection;
 public class GenerateHotConf {
 
 	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
-			generate();
+		GenerateHotConf.generate();
 	}
 	public static void generate() throws Exception{
 		String mongodbTableName = "res_conf_info";
@@ -31,7 +29,7 @@ public class GenerateHotConf {
 
 		Conference conference = new Conference();
 		conference.setClick_times(40);
-		conference.setOnganizer(rs.getString(3));
+		conference.setOrganizer(rs.getString(3));
 		conference.setRes_id(res_id1);
 		conference.setTitle(rs.getString(2));
 		conference.setUrl(rs.getString(18));
