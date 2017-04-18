@@ -11,7 +11,12 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
 public class MongoConn {
-    public MongoCollection<Document> conn(String mongodbTableName){
+	/**
+	 * Authorized connect to MongoDB
+	 * @param mongodbTableName
+	 * @return
+	 */
+    public MongoCollection<Document> connWithAuth(String mongodbTableName){
     	ServerAddress ip = new ServerAddress("localhost",27017);
     	String database = "silkRoad";
     	String userName = "wuke";
@@ -35,8 +40,12 @@ public class MongoConn {
         }
     }
     
-    // no password
-	public static MongoCollection<Document> getMongoCollection(String mongoCollectionName) {
+    /**
+     * Unauthorized connect to MongoDB
+     * @param mongoCollectionName
+     * @return
+     */
+	public static MongoCollection<Document> conn(String mongoCollectionName) {
 		String databaseName = "silkRoad";
 		try {
 			MongoClient mongoClient = new MongoClient("localhost", 27017);
