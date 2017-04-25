@@ -13,7 +13,6 @@ $(document).ready(function () {
     var datal= [];
 
     $.ajax({
-        //url:"http://202.117.15.155:8080/silkRoad2/user_info",
         url:"http://123.206.87.123:8080/silkRoad2/user_info",
         async:false,
         success:function (jsonData) {
