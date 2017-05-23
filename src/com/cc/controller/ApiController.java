@@ -18,13 +18,11 @@ public class ApiController extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doPost(req, resp);
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		Map<String, String> map = new HashMap<>();
 		//String ip = "202.117.15.155";
 		//String ip = "219.245.39.39";

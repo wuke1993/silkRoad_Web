@@ -17,7 +17,6 @@ import com.mongodb.client.MongoCollection;
 public class GenerateHotPatent {
 
 	public static void main(String[] args) throws Exception{
-		// TODO Auto-generated method stub
 		generateHotPatent();
 	}
 	public static void  generateHotPatent() throws Exception {

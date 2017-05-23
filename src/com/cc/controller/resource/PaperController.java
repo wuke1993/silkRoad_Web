@@ -22,15 +22,12 @@ public class PaperController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doPost(req, resp);
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-
 		String mongodbTableName = "res_paper_info";
 		MongoConn mongoConn = new MongoConn();
 		MongoCollection<Document> collection = mongoConn.conn(mongodbTableName);

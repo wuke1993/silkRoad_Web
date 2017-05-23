@@ -22,7 +22,6 @@ public class PatentController extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		String mongodbTableName="res_patent_info";
 		MongoConn mongoConn = new MongoConn();
 		MongoCollection<Document> collection = mongoConn.conn(mongodbTableName);
@@ -42,7 +41,6 @@ public class PatentController extends HttpServlet {
 
 	@Override
 	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		
 	}
 }

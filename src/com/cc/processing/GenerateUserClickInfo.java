@@ -10,7 +10,6 @@ import com.mongodb.client.MongoCollection;
 public class GenerateUserClickInfo {
 
 	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
 		generateUserProfie();
 	}
 	public static void generateUserProfie() throws Exception{	

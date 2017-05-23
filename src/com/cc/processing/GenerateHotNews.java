@@ -15,7 +15,6 @@ import com.mongodb.client.MongoCollection;
 public class GenerateHotNews {
 
 	public static void main(String[] args) throws Exception{
-		// TODO Auto-generated method stub
 		generateNews();
 	}
 	public static void generateNews() throws Exception {

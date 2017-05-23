@@ -16,8 +16,7 @@ import com.mongodb.client.MongoCollection;
 public class GenerateHotEbook {
 
 	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
-generateEbook();
+		generateEbook();
 	}
 	
 	public static void generateEbook() throws Exception{
